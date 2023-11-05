@@ -35,7 +35,7 @@ app.listen(PORT, () => {
 });
 
 // Route to get the current block number
-app.get("/blocknumber", async (req, res) => {
+app.get("/", async (req, res) => {
   try {
     // Get the current block number from the Ethereum node
     const blockNumber = await web3Instance.eth.getBlockNumber();

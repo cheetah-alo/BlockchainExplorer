@@ -1,0 +1,198 @@
+/* Home.css */
+
+.container {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.page-title-home {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-label {
+  margin-right: 14px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.search-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.last-block-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.last-block-label {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.last-block-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.last-block-number {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Block.css */
+
+.page-title-block {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #f5f4f4;
+}
+
+.block-container {
+  text-align: left;
+  margin: 24px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #0a010a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 1000px;
+}
+
+.page-title-tx {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1c1b1b;
+  text-align: left;
+}
+
+.block-content {
+  font-size: 18px;
+}
+
+.loading-indicator {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.error-indicator {
+  font-size: 18px;
+  margin-top: 20px;
+  color: rgb(186, 61, 61);
+}
+
+/* Balance.css */
+
+.balance-container {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #0a010a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+}
+
+.balance-content {
+  font-size: 20px;
+}
+
+.page-title-balance {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #f5f4f4;
+}
+
+.loading-indicator {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.last-block-number {
+  font-size: 20px;
+  font-weight: bold;
+  color: #24a359; /* Blue color for the block number */
+  margin-top: 14px; /* Adjust margin as needed */
+}
+
+.tx-container {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.home-button {
+  background-color: rgb(4, 0, 13);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.back-button {
+  background-color: rgb(4, 0, 13);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.JsonThemeObject {
+  main: 'font-size: 16px; color: #333;',
+  key: 'color: #4285f4;',
+  string: 'color: #0f9d58;',
+  value: 'color: #f4b400;',
+  boolean: 'color: #4285f4;',
+};
+
