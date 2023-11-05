@@ -19,3 +19,9 @@ export async function getBalance(address) {
   const data = await response.json();
   return data;
 }
+
+export async function getLastBlockNumber() {
+  const response = await fetch(`http://localhost:2525/`);
+  const data = await response.json();
+  return data;
+}

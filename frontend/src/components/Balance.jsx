@@ -1,8 +1,9 @@
 import { Outlet, useParams } from "react-router-dom";
 import { useQuery } from "react-query";
 import ReactJson from "react-json-pretty";
-import "react-json-pretty/themes/monikai.css"; // Import a theme for styling (you can choose a different theme)
+import "react-json-pretty/themes/monikai.css";
 import { getBalance } from "../api";
+import "../index.css";
 
 export function Balance() {
   const params = useParams();
@@ -10,15 +11,25 @@ export function Balance() {
     ["address", params.address],
     getBalance
   );
-  if (isLoading) return <h2>Loading...</h2>;
-  if (isError) return <h2>There is an error...</h2>;
+
+  if (isLoading) return <LoadingIndicator />;
+  if (isError) return <ErrorIndicator />;
+
   return (
-    <div className="container">
-      <h1>Balance {params.address}</h1>
-      <div className="json-output">
-        <ReactJson data={data} theme="monikai" />
+    <div className="balance-container">
+      <h1 className="page-title-balance">Balance for the Account</h1>
+      <div className="balance-content">
+        <ReactJson data={data} theme="manokai" />
       </div>
       <Outlet />
     </div>
   );
+}
+
+function LoadingIndicator() {
+  return <div className="loading-indicator">Loading...</div>;
+}
+
+function ErrorIndicator() {
+  return <div className="error-indicator">There was an error...</div>;
 }
